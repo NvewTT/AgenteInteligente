@@ -7,22 +7,22 @@ namespace AgenteInteligente
     public class Regra
     {
         private Dictionary<Percepcao, Acao> _dicionarioDeRegras;
-        private List<Percepcao> _percepcaoes;
+        private List<Percepcao> _percepcoes;
         public Regra()
         {
             _dicionarioDeRegras = new Dictionary<Percepcao, Acao>();
-            _percepcaoes = new List<Percepcao>();
+            _percepcoes = new List<Percepcao>();
         }
 
         public void adicionaRegra(Percepcao percepcao, Acao acao)
         {
             _dicionarioDeRegras.Add(percepcao,acao);
-            _percepcaoes.Add(percepcao);
+            _percepcoes.Add(percepcao);
         }
 
         public Acao acaoDaRegra(Percepcao percepcao)
         {
-            foreach (var unicaPercepcao in _percepcaoes.Where(unicaPercepcao => unicaPercepcao.eIgual(percepcao)))
+            foreach (var unicaPercepcao in _percepcoes.Where(unicaPercepcao => unicaPercepcao.eIgual(percepcao)))
             {
                 return _dicionarioDeRegras[unicaPercepcao];
             }
