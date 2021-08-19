@@ -42,7 +42,6 @@ namespace AgenteInteligente
                 if (sujeiras[i] != EstadoDoQuadrado.sujo) continue;
                 quantidadeDeSujeira++;
             }
-
             return quantidadeDeSujeira;
         }
     }
