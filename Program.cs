@@ -31,7 +31,7 @@ namespace AgenteInteligente
                 quantidadeDeSujeiraLimpa++;
             }
             double acuracia = (quantidadeDeSujeiraLimpa / quantidadeDeSujeira) * 100;
-            Console.WriteLine(acuracia.ToString() + "%");
+            Console.WriteLine(acuracia + "%");
         }
         private static double prencheArrayDeSujeiras(int quantidadesDeEstadosDosQuadrados, EstadoDoQuadrado[] sujeiras, Random random,
             int tamanhoDoEstadoDoQuadrado, double quantidadeDeSujeira)
